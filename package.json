@@ -1,6 +1,6 @@
 {
   "name": "xshare",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "no-bullshit file hosting",
   "repository": "thekamalkashyap/xshare",
   "main": "index.js",
