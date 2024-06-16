@@ -1,14 +1,14 @@
 {
   "name": "xshare",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "no-bullshit file hosting",
+  "repository": "thekamalkashayp/xshare",
   "main": "dist/index.js",
   "type": "module",
   "files": [
     "dist"
   ],
   "bin": {
-    "nullptr": "dist/index.js",
     "xshare": "dist/index.js",
     "oxo": "dist/index.js"
   },
