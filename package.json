@@ -1,0 +1,30 @@
+{
+  "name": "xshare",
+  "version": "1.0.0",
+  "description": "no-bullshit file hosting",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "nullptr": "./index.js",
+    "xshare": "./index.js",
+    "oxo": "dist/index.js"
+  },
+  "scripts": {
+    "prebuild": "npx delete-cli dist",
+    "build": "ncc build index.js -m -C",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "0x0.st",
+    "0x0",
+    "xshare",
+    "null pointer"
+  ],
+  "author": "thekamalkashyap",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "node-fetch": "^3.3.2",
+    "picocolors": "^1.0.1"
+  }
+}
