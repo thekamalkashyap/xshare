@@ -7,7 +7,7 @@ settings:
 importers:
 
   .:
-    devDependencies:
+    dependencies:
       commander:
         specifier: ^12.1.0
         version: 12.1.0

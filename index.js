@@ -67,11 +67,15 @@ if (options.expires) {
     const response = await fetch(fetchUrl, options);
     const token = response.headers.get("x-token");
     const resultUrl = await response.text();
-    console.log(green("File uploaded successfully!"));
-    if (token) {
-      console.log(bold("Token:"), blue(token));
+    if (regex.test(resultUrl)) {
+      console.log(green("File uploaded successfully!"));
+      if (token) {
+        console.log(bold("Token:"), blue(token));
+      }
+      console.log(bold("URL:"), blue(resultUrl));
+    } else {
+      console.log(red(resultUrl));
     }
-    console.log(bold("URL:"), blue(resultUrl));
   } catch (e) {
     console.log(red("Something went wrong!"));
   }

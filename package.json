@@ -1,20 +1,15 @@
 {
   "name": "xshare",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "no-bullshit file hosting",
-  "repository": "thekamalkashayp/xshare",
-  "main": "dist/index.js",
+  "repository": "thekamalkashyap/xshare",
+  "main": "index.js",
   "type": "module",
-  "files": [
-    "dist"
-  ],
   "bin": {
-    "xshare": "dist/index.js",
-    "oxo": "dist/index.js"
+    "xshare": "index.js",
+    "oxo": "index.js"
   },
   "scripts": {
-    "prebuild": "npx delete-cli dist",
-    "build": "ncc build index.js -m -C",
     "start": "node index.js"
   },
   "keywords": [
@@ -25,7 +20,7 @@
   ],
   "author": "thekamalkashyap",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "commander": "^12.1.0",
     "node-fetch": "^3.3.2",
     "picocolors": "^1.0.1"

@@ -113,7 +113,7 @@ npx xshare <file-path/url>
 
 To get a development environment running:
 
-1. Clone the project and install its dependencies using npm
+1. Clone the project and install its dependencies using pnpm
 
 ```sh
 git clone https://github.com/thekamalkashyap/xshare.git
@@ -138,7 +138,7 @@ pnpm install
 5. Running The Application
 
 ```sh
-npm start
+pnpm start
 ```
 
 ## Author
